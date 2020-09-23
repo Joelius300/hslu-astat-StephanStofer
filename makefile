@@ -1,14 +1,13 @@
-PARAMS=-N --pdf-engine=xelatex -V documentclass=scrartcl -V papersize=a4 -V lang=de -V linkcolor=blue -V fontsize=11pt -V geometry=left=2cm,right=2cm,top=2cm,bottom=3cm --filter pandoc-mermaid
-FONTS=-V mainfont="Baskerville" -V sansfont="Didot" -V monofont="Arial"
-DATE=-V date="`date +'%d.%m.%Y'`"
-FILE=Notizen_I.BA_IOT_H20
-TARGET=notes/*.md
-OUTFORMAT=.pdf
+PARAMS=--pdf-engine=xelatex --filter pandoc-mermaid --metadata-file=$(OPTIONS)
+OPTIONS=document_options.yaml
+OUTPUT=Zusammenfassung_ASTAT_H20
+INPUT=notes/*.md
+FILEEXTENSION=.pdf
 
 all: compile clean
 
 compile: $(TARGET)
-	pandoc -s $(PARAMS) $(FONTS) $(DATE) $(TARGET) -o $(FILE)$(OUTFORMAT)
+	pandoc -s $(PARAMS) $(INPUT) -o $(OUTPUT)$(FILEEXTENSION)
 
 clean:
 	rm -f *.lock
