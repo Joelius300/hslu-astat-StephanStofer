@@ -1,7 +1,8 @@
-PARAMS=--pdf-engine=xelatex --filter pandoc-mermaid --metadata-file=$(OPTIONS)
+PARAMS=--pdf-engine=xelatex --filter pandoc-mermaid --metadata-file=$(OPTIONS) --resource-path=$(SEARCHPATH)
 OPTIONS=document_options.yaml
 OUTPUT=Zusammenfassung_ASTAT_H20
 INPUT=notes/*.md
+SEARCHPATH=notes/images/
 FILEEXTENSION=.pdf
 
 all: compile clean
