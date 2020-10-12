@@ -18,18 +18,18 @@ Das Wahrscheinlichkeitsmodell besteht aus folgenden Komponenten:
 #### Grundraum, Elementarereignisse
 
 Bei einem Experiment wird aus dem Grundraum *ein* Elementarereignis *zufällig* gewählt. Als Beispiel das Würfeln. Grundraum gegeben durch
-$$\Omega = {1,2,3,4,5,6}$$
+$$\Omega = \{1,2,3,4,5,6\}$$
 Element $\omega$ ist ein Elementarereignis und bedeutet, dass bei Würfeln die Zahl 2 geworfen wird.
 
 #### Ereignis
 
 Unter einem Ereignis versteht man eine Teilmenge von $\Omega$. Das Ereignis $A$ bedeutet, dass das Ergebnis $\omega$ des Experiments zu $A$ gehört.
 
-Beispiel für ein Ereignis $A$: "eine ungerade Augenzahl würfeln", dann ist $A={1,3,5}$ und tritt ein, wenn eine der drei Zahlen gewürfelt wird. Eine Leere Menge ist auch ein Ereignis ${} \subset \Omega$.
+Beispiel für ein Ereignis $A$: "eine ungerade Augenzahl würfeln", dann ist $A=\{1,3,5\}$ und tritt ein, wenn eine der drei Zahlen gewürfelt wird. Eine Leere Menge ist auch ein Ereignis $\{\} \subset \Omega$.
 
 ## Disjunkte Ereignisse
 
-Zwei Ereignisse $A$ und $B$ heissen *disjunkt*, wenn sich $A$ und $B$ gegenseitig ausschliessen und nicht gemeinsam eintreten können. Dann gilt $$A \cap B = {}$$ und ist somit unmöglich.
+Zwei Ereignisse $A$ und $B$ heissen *disjunkt*, wenn sich $A$ und $B$ gegenseitig ausschliessen und nicht gemeinsam eintreten können. Dann gilt $$A \cap B = \{\}$$ und ist somit unmöglich.
 
 ## Axiome und Rechenregeln der Wahscheinlichkeitsrechnung
 
@@ -37,13 +37,13 @@ Die Wahrscheinlichkeitsrechnung baut auf die folgenden drei Grundregeln (Kolmogo
 
 * A1: $P(A) \geq 0$
 * A2: $P(\Omega) = 1$
-* A3: $P(A \cup B) = P(A) + P(B)$ falls $A \cap B = {}$
+* A3: $P(A \cup B) = P(A) + P(B)$ falls $A \cap B = \{\}$
 
 ### Rechenregeln
 
 Für dieses Modul relevante Rechenregeln:
 
-1. $P(\overline{\rm A} = 1 - P(A)$
+1. $P(\overline{A} = 1 - P(A)$
 2. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 Die zweite Regel für diskjunkte Ereignisse. Die Schnittemenge wird doppelt gezählt, weshalb wir diese einmal abziehen müssen.
@@ -58,7 +58,7 @@ Mit diskret sind endliche und unendliche Mengen gemeint, welche ganzzahlige Elem
 
 Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen zählen wir die Anzahl der *günstigen* Elemtentarereignisse durch die Anzahl der *möglichen* Elementarereignisse.
 Wenn alle Ereignisse $E$ gleich wahrscheinlich sind, ist das Eintreten des Ereignisses $E$ nach dem Laplace-Modell:
-$$P(E) = \frac{\lvert E \rvert}{lvert \Omega \rvert}$$
+$$P(E) = \frac{\lvert E \rvert}{\lvert \Omega \rvert}$$
 
 ## Der Begriff der Unabhängigkeit
 
