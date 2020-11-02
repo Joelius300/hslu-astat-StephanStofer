@@ -80,6 +80,13 @@ pnorm(q = 130, mean = 100, sd = 15)
 
 Dieser Befehl ermittelt die Fläche (Wahrscheinlichkeit von $-\infty$ bis $q=130$ unter der Normalverteilungskurve mit $\mu = 100$ und $\sigma = 15$
 
+```{.r .numberLines}
+qnorm(p = c(0.025, 0.975), mean = 100, sd = 15)
+## [1] 70.60054 129.39946
+```
+
+`qnorm()` bestimmt die Quantile für die Normalverteilung. Bei diesem Beispiel haben wir den Wertebereich von 95% aller Beobachtungen eruiert. Diese liegen zwischen 70 bis 130.
+
 > Ist eine Zufallsvariable normalverteilt, so liegen etwa zwei Drittel aller Messerte etwa eine Standardabweichung um den Erwartungswert.
 
 Für *alle* Normalverteilungen $\mathcal{N}(\mu, \sigma^2)$ gilt, dass die Wahrscheinlichkeit, dass eine Beobachtung höchstens *eine* Standardabweichung vom Erwartungswert abweicht, ist etwa $\frac{2}{3}$:
