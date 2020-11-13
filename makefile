@@ -5,7 +5,7 @@ INPUT=notes/*.md
 SEARCHPATH=notes/images/
 FILEEXTENSION=.pdf
 
-all: compile clean
+all: compile clean open
 
 compile: $(TARGET)
 	pandoc -s $(PARAMS) $(INPUT) -o $(OUTPUT)$(FILEEXTENSION)
@@ -14,3 +14,6 @@ clean:
 	rm -f *.lock
 	if [ -d "mermaid-images" ]; then rm -R mermaid-images; fi
 	rm -f *.json
+
+open:
+	open $(OUTPUT)$(FILEEXTENSION)

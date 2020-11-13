@@ -5,14 +5,14 @@ Der Hypothesentest ist *nie* ein Beweis das eine Angabe wahr ist oder falsch, so
 
 ## Statistische Tests und Vertrauensintervall für eine Stichprobe bei normalverteilten Daten
 
-Messungen können wir als Realisierungen von unabhängigen, identisch verteilten Zufallsvariablen $X_i$ betrachten und die Kennzahlen $E(X_i)=\mu$ und $Var(X_i) = \sigma^2_X erfassen. Typischerweise sind diese (und andere) Kennzahlen *unbekannt*.Trotzdem möchten wir eine Aussage über das wahre, aber eben unbekannte $\mu$ und $\sigma^^$ machen.
-Das Ziel ist es den Daten $\mu$ und $\sigma^2$ anzunähern und sprechen dabei von einer *Schätzung* der Parameter $\mu$ und $\sigma^2$. Geschätzte Werte werden mit einem $\hat$ bezeichnet $\hat{\mu}$.
+Messungen können wir als Realisierungen von unabhängigen, identisch verteilten Zufallsvariablen $X_i$ betrachten und die Kennzahlen $E(X_i)=\mu$ und $Var(X_i) = \sigma^2_X$ erfassen. Typischerweise sind diese (und andere) Kennzahlen *unbekannt*.Trotzdem möchten wir eine Aussage über das wahre, aber eben unbekannte $\mu$ und $\sigma^2$ machen.
+Das Ziel ist es den Daten $\mu$ und $\sigma^2$ anzunähern und sprechen dabei von einer *Schätzung* der Parameter $\mu$ und $\sigma^2$. Geschätzte Werte werden mit einem $\hat{}$ bezeichnet $\hat{\mu}$.
 Für die (Punkt-)Schätzungen für den Erwartungswert und Varianz gilt:
 $$\hat{\mu}=\bar{X_n}=\frac{X_1+...+X_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i$$
-$$\hat{\sigma^2_X}=\frac{(X_1-\bar{X_n})^2+...+(X_1-\bar{X_n})^2}{n-1}=\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X_n})^2$$
+$$\hat{\sigma}^2_X=\frac{(X_1-\bar{X_n})^2+...+(X_1-\bar{X_n})^2}{n-1}=\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X_n})^2$$
 
-Beachte, dass $\hat{\mu}$ und $\hat{\sigma_{X}^2}$ selbst Zufallsvariablen sind und für jede neue Messung sich neue $\hat{\mu}$ und $\hat{\sigma_{X}^2}$ ergeben.
-Obwohl im Allgmeinen $\hat{\mu}\ne \mu$ und $\hat{\sigma_{X}^2} \approx \sigma_{X}^2$ ist die Hoffnung dass $\hat{\mu}\ne \mu$ und $\hat{\sigma_{X}^2} \approx \sigma_{X}^2$ und damit annähert.
+Beachte, dass $\hat{\mu}$ und $\hat{\sigma}^2_X$ selbst Zufallsvariablen sind und für jede neue Messung sich neue $\hat{\mu}$ und $\hat{\sigma}^2_{X}$ ergeben.
+Obwohl im Allgmeinen $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ ist die Hoffnung dass $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ und damit annähert.
 
 ### Ziel des Hypothesentests
 
@@ -55,7 +55,7 @@ ist. Oder Mathematisch: Die Verteilung der Teststatistik T unter Nullhypothese
 $H_0$
 $$T=\bar{H_n}/mathcal{N}(\mu,\frac{\sigma^2}{n})$$
 
-Ist die Wahrscheinlichkeit kleiner als 2.5% ist sie zu klein und der 
+Ist die Wahrscheinlichkeit kleiner als 2.5% ist sie zu klein und der
 Mittelwert zu unwahrscheinlich, als dieser zur Aussgangsgrösse a passen könnte.
 
 ![Normalverteilungskurve eines
@@ -98,9 +98,9 @@ Signifikanzniveau an.
 #### Signifikanz
 
 * p-Wert $\approx 0.05 \implies$ schwach signifikant, "."
-* p-Wert $\approx 0.01 \implies$ signifikant, "*"
-* p-Wert $\approx 0.001 \implies$ stark signifikant, "**"
-* p-Wert $\leq 10^{-4} \implies$ äusserst signifikant, "***"
+* p-Wert $\approx 0.01 \implies$ signifikant, "\*"
+* p-Wert $\approx 0.001 \implies$ stark signifikant, "\*\*"
+* p-Wert $\leq 10^{-4} \implies$ äusserst signifikant, "\*\*\*"
 
 ## t-Test
 Entgegen dem bisherigen Verfahren (z-Test) wo die Standardabweichung bekannt
