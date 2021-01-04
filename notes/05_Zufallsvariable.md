@@ -4,9 +4,9 @@ Bei einem Zufallsexperiment mit dem Grundraum $\Omega$ ordnen wir mit der *Funkt
 
 Eine Wertemenge bezeichnet die Werte, welche die Zufallsvariable annehmen kann.
 
-**Bermerkungen**  
+**Bermerkungen**
 
-* die *Zufallsvariable wird mit einem Grossbuchstaben bezeichnet ($X$)
+* die *Zufallsvariable* wird mit einem Grossbuchstaben bezeichnet ($X$)
 * der entsprechende *Kleinbuchstabe* $x$ stellt einen konkreten Wert dar, den die Zufallsvariable annehmen kann (die Zahl)
 * für das Ereignis, welches $X$ annimmt, schreiben wir $X=x$
 * bei der Zufallsvariable ist nicht die Funktion $X$ zufällig, sondern das Argument $\omega$. Je nach Ausgang erhalten wir einen anderen Wert $X(\omega)=x$
@@ -14,7 +14,7 @@ Eine Wertemenge bezeichnet die Werte, welche die Zufallsvariable annehmen kann.
 
 ## Wahrscheinlichkeitsverteilung einer Zufallsvariable
 
-Berechnen wir für *jede* Realisierung einer Zufallsvariable die zugehörige Eintretenswahrscheinlichkeit, so bilden alle diese Wahrscheinlichkeiten zusammen die *Wahrscheinlichkeitsverteilung* dieser Zufallsvariablen. Dabei gilt 
+Berechnen wir für *jede* Realisierung einer Zufallsvariable die zugehörige Eintretenswahrscheinlichkeit, so bilden alle diese Wahrscheinlichkeiten zusammen die *Wahrscheinlichkeitsverteilung* dieser Zufallsvariablen. Dabei gilt
 
 $$P(X=x_1)+P(X=x_2)+...+P(X=x_n)=1 $$
 
@@ -36,11 +36,11 @@ $$\sigma(X) = \sqrt{Var(x)}$$
 ### Standardabweichung mit R
 
 ```{.r .numberLines}
-x <- 1 : 6 
+x <- 1 : 6
 p <- 1 / 6
 E_X <- sum(x * p)
 var_X <- sum((x - E_X)^2 * p)
-sd_X <- sqrt(var_X) 
+sd_X <- sqrt(var_X)
 sd_X
 # [1] 1.707825
 ```
@@ -50,11 +50,11 @@ Beispiel eines nicht-fairen Würfels auch mit `R` berechnet:
 ```{.r .numberLines}
 x <- 1 : 6
 p <- c(4, 2, 1, 3, 1, 1) / 12
-E_X <- sum(x * p) 
+E_X <- sum(x * p)
 E_X
 ## [1] 2.833333
 var_X <- sum((x - E_X)^2 * p)
-sd_X <- sqrt(var_X) 
+sd_X <- sqrt(var_X)
 sd_X
 ## [1] 1.674979
 ```

@@ -8,7 +8,7 @@ Das wir wissen, dass B schon eingetreten ist, haben wir einen neuen Grundraum $\
 
 ## Rechenregeln der bedingten Wahrscheinlichkeit
 
-![Rechenregeln der bedingten Wahrscheinlichkeit}(rechenregeln_bedWahrscheinlichkeit.png){width=60%}
+![Rechenregeln der bedingten Wahrscheinlichkeit](rechenregeln_bedWahrscheinlichkeit.png){width=60%}
 
 ## Bayes Theorem und totale Wahrscheinlichkeit
 

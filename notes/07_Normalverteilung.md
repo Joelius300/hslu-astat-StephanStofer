@@ -2,7 +2,7 @@
 
 ## Stetige Zufallsvariable und Wahrscheinlichkeitsverteilungen
 
-Der Unterschied einer *stetigen* und *diskreten* Zufallsvariable besteht darin, dass die stetige *jeden* Wert eines bestimmten Bereiches annehmen. Diskrete hingegeben aus einer definierten und endlicher Menge (z.B. von 0 bis 100, jeweils ganze Zahlen). Wichtig auch, es kann kein Wert zwischen zwei Werten aus einer Wertemenge ausgewählt werden. Dabei gilt: 
+Der Unterschied einer *stetigen* und *diskreten* Zufallsvariable besteht darin, dass die stetige *jeden* Wert eines bestimmten Bereiches annehmen. Diskrete hingegeben aus einer definierten und endlicher Menge (z.B. von 0 bis 100, jeweils ganze Zahlen). Wichtig auch, es kann kein Wert zwischen zwei Werten aus einer Wertemenge ausgewählt werden. Dabei gilt:
 
 * die Variable $X$ ist eine Funktion
 * die Variable $x$ ist ein konkreter Wert (*Realisierung*) von $X$
@@ -19,11 +19,11 @@ Wahrscheinlichkeitsdichten können unter der Berücksichtigung folgender Einschr
 
 Für eine Wahrscheinlichkeitsdichte $f(x)$ gelten folgende Eigenschaften:
 
-* es gilt $f(x) \geq 0$ -> Kurve auf oder oberhalb der x-Achse
+* es gilt $f(x) \geq 0 \longrightarrow$ Kurve auf oder oberhalb der x-Achse
 * die Wahrscheinlichkeit $P(a < X \leq b)$ entspricht der Fläche zwischen $a$ und $b$ unter $f(x)$
-* die gesamte Fläche unter der Kurve ist 1 -> W'keit dass *irgendein* Wert gemessen wird.
+* die gesamte Fläche unter der Kurve ist 1 $\longrightarrow$ W'keit dass *irgendein* Wert gemessen wird.
 
-![Dichte einer Zufallsvariable und der Wahrscheinlichkeit in ein Intervall $(a,b]\,$ zu fallen \(grüne Fläche\).](dichte_zv.png){width=60%}
+![Dichte einer Zufallsvariable und der Wahrscheinlichkeit in ein Intervall $(a,b)$ zu fallen (grüne Fläche)](dichte_zv.png){width=60%}
 
 Bei stetigen Wahrscheinlichkeitsverteilungen entsprechen Wahrscheinlichkeiten den Flächen unter der Dichtefunktion.
 

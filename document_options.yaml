@@ -21,13 +21,13 @@ sansfont: Didot
 monofont: Arial
 fontsize: 11pt
 dpi: 124
-header-includes: 
+header-includes:
       - |
         ``` {=latex}
         \let\originAlParaGraph\paragraph
         \renewcommand{\paragraph}[1]{\originAlParaGraph{#1} \hfill}
         ```
-output: 
+output:
   pdf_document:
     extra_dependencies: ["flafter"]
 ---
