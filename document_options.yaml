@@ -18,7 +18,7 @@ linkcolor: blue
 toccolor: blue
 mainfont: Baskerville
 sansfont: Didot
-monofont: Arial
+monofont: Inconsolatazi4
 fontsize: 11pt
 dpi: 124
 header-includes:
