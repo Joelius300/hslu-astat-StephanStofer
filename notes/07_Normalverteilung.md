@@ -2,14 +2,14 @@
 
 ## Stetige Zufallsvariable und Wahrscheinlichkeitsverteilungen
 
-Der Unterschied einer *stetigen* und *diskreten* Zufallsvariable besteht darin, dass die stetige *jeden* Wert eines bestimmten Bereiches annehmen. Diskrete hingegeben aus einer definierten und endlicher Menge (z.B. von 0 bis 100, jeweils ganze Zahlen). Wichtig auch, es kann kein Wert zwischen zwei Werten aus einer Wertemenge ausgewählt werden. Dabei gilt:
+Der Unterschied einer *stetigen* und *diskreten* Zufallsvariable besteht darin, dass die stetige *jeden* Wert eines bestimmten Bereiches annehmen. Diskrete hingegen aus einer definierten und endlicher Menge (z.B. von 0 bis 100, jeweils ganze Zahlen). Wichtig auch, es kann kein Wert zwischen zwei Werten aus einer Wertemenge ausgewählt werden. Dabei gilt:
 
 * die Variable $X$ ist eine Funktion
 * die Variable $x$ ist ein konkreter Wert (*Realisierung*) von $X$
 
 ### Stetige Verteilungen
 
-Stetig sind die Verteilungen wenn keine Lücken in einem Bereich vorhanden sind. Die jeweilige Wahrscheinlichkeit ist $P(X=x) = 0$. Diese werden *Punktwahrscheinlichkeiten* genannt. Diese Wahrscheinlichkeit bringt uns aber nicht weiter. Weshalb wird die Wahrscheinlichkeit zwischen zwei Punkten berechnen. Dazu wird das Konzept der *Wahrscheinlichkeitsdichte* angewendet.
+Stetig sind die Verteilungen wenn keine Lücken in einem Bereich vorhanden sind. Die jeweilige Wahrscheinlichkeit ist $P(X=x) = 0$. Diese werden *Punktwahrscheinlichkeiten* genannt. Diese Wahrscheinlichkeit bringt uns aber nicht weiter. Deshalb wird die Wahrscheinlichkeit zwischen zwei Punkten berechnet. Dazu wird das Konzept der *Wahrscheinlichkeitsdichte* angewendet.
 
 ### Wahrscheinlichkeitsdichte
 
@@ -37,12 +37,12 @@ Dies bedeuetet, dass 75% einer Menge maximal diese Messgrösse erreichen.
 
 ### Kennzahlen von stetigen Verteilungen
 
-Der Erwartungswert $E(X)$ und die Standardabweichung $\sigma_X$ werden gleich wie im diskreten Fall interpertiert:
+Der Erwartungswert $E(X)$ und die Standardabweichung $\sigma_X$ werden gleich wie im diskreten Fall interpretiert:
 
 * $E(X)$ beschreibt die mittlere Lage der Verteilung
 * $\sigma_X$ beschreibt die Streuung der Verteilung um den Erwartungswert
 
-Im stetigen Fall, sind die beiden Funktionen aber mit Integralen statt Summen definiert.
+Im stetigen Fall, sind die beiden Funktionen aber mit Integralen statt mit Summen definiert.
 
 ## Normalverteilung (Gaussverteilung)
 
@@ -58,7 +58,7 @@ $$X \sim \mathcal{N} (\mu, \sigma^2)$$
 * $Var(X) = \sigma^2$
 * $\sigma_X = \sigma$
 
-Die bedeutet, dass die Parameter $\mu$ und $\sigma^2$ eine natürliche Interpretation als Erwartungswert und Varianz einer Verteilung haben.
+Dies bedeutet, dass die Parameter $\mu$ und $\sigma^2$ eine natürliche Interpretation als Erwartungswert und Varianz einer Verteilung haben.
 
 ### Graphische Darstellung der Normalverteilung
 
@@ -87,7 +87,7 @@ qnorm(p = c(0.025, 0.975), mean = 100, sd = 15)
 
 `qnorm()` bestimmt die Quantile für die Normalverteilung. Bei diesem Beispiel haben wir den Wertebereich von 95% aller Beobachtungen eruiert. Diese liegen zwischen 70 bis 130.
 
-> Ist eine Zufallsvariable normalverteilt, so liegen etwa zwei Drittel aller Messerte etwa eine Standardabweichung um den Erwartungswert.
+> Ist eine Zufallsvariable normalverteilt, so liegen etwa zwei Drittel aller Messerte im Abstand von etwa einer Standardabweichung um den Erwartungswert.
 
 Für *alle* Normalverteilungen $\mathcal{N}(\mu, \sigma^2)$ gilt, dass die Wahrscheinlichkeit, dass eine Beobachtung höchstens *eine* Standardabweichung vom Erwartungswert abweicht, ist etwa $\frac{2}{3}$:
 $$P(\mu - \sigma \leq X \leq \mu + \sigma) \approx \frac{2}{3}$$
@@ -95,7 +95,7 @@ $$P(\mu - \sigma \leq X \leq \mu + \sigma) \approx \frac{2}{3}$$
 Die Wahrscheinlichkeit, dass eine Beobachtung höchstens *zwei* Standardabweichungen vom Erwartungswert abweicht ist:
 $$P(\mu - 2 \sigma \leq X \leq \mu +2 \sigma) \approx 0.95$$
 
-Aus diesen beiden Wahrscheinlichkeiten lassen sich auch als Flächen interpretieren. Die Fläche der Normalverteilung über dem Intervall $[\,\mu - \sigma, \mu + \sigma ]\,$ ist ca. $\frac{2}{3}$. Die Flöche über dem Intervall $[\, \mu - 2\sigma, \mu +2 \sigma ]\,$ ist ca. $0.95$.
+Aus diesen beiden Wahrscheinlichkeiten lassen sich auch als Flächen interpretieren. Die Fläche der Normalverteilung über dem Intervall $[\,\mu - \sigma, \mu + \sigma ]\,$ ist ca. $\frac{2}{3}$. Die Fläche über dem Intervall $[\, \mu - 2\sigma, \mu +2 \sigma ]\,$ ist ca. $0.95$.
 
 ### Standardnormalverteilung
 

@@ -2,7 +2,7 @@
 
 ## Wahrscheinlichkeitsmodelle
 
-Wir verwenden oft Modelle um die Wahrscheinlichkeit zu bestimmen. Dazu treffen wir Annahmen (z.B. dass ein Würfel fair ist) die dann im Modell umgesetzt/berechnet werden. Mit Hilfe des Modells können wir dann auch untersuchen, ob dieser Würfel fair ist. Wenn wir einen wiederholt werfen und oft die Zahl 2 vorkommt, können wir annehmen, dass der Würfel nicht fair ist.
+Wir verwenden oft Modelle um die Wahrscheinlichkeit zu bestimmen. Dazu treffen wir Annahmen (z. B. dass ein Würfel fair ist), die dann im Modell umgesetzt/berechnet werden. Mit Hilfe des Modells können wir dann auch untersuchen, ob dieser Würfel fair ist. Wenn wir einen Würfel wiederholt werfen und oft die Zahl 2 vorkommt, können wir annehmen, dass der Würfel nicht fair ist.
 
 ### Definition Wahrscheinlichkeitsmodelle
 
@@ -11,9 +11,9 @@ Wir betrachten *Zufallsexperimente*, bei denen der Ausgang *nicht exakt* vorhers
 Das Wahrscheinlichkeitsmodell besteht aus folgenden Komponenten:
 
 * *Grundraum* $\Omega$, der aus der Menge der *Elementarereignissen* $\omega$ besteht
-* *Elementarerignisse* sind mögliche Ergebnisse oder Ausgänge des Experiments, die alle zusammen den Grundraum bilden.
-* *Ergebnisse A, B, C,...* als Teilmengen von $\Omega$
-* *Wahrscheinlichkeiten P*, die zu den Ereignissen $A, B, C,...$ gehören
+* *Elementarereignisse* sind mögliche Ergebnisse oder Ausgänge des Experiments, die alle zusammen den Grundraum bilden.
+* *Ergebnisse* $A, B, C,...$ als Teilmengen von $\Omega$
+* *Wahrscheinlichkeiten* $P$, die zu den Ereignissen $A, B, C,...$ gehören
 
 #### Grundraum, Elementarereignisse
 
@@ -29,7 +29,7 @@ Beispiel für ein Ereignis $A$: "eine ungerade Augenzahl würfeln", dann ist $A=
 
 ## Disjunkte Ereignisse
 
-Zwei Ereignisse $A$ und $B$ heissen *disjunkt*, wenn sich $A$ und $B$ gegenseitig ausschliessen und nicht gemeinsam eintreten können. Dann gilt $$A \cap B = \{\}$$ und ist somit unmöglich.
+Zwei Ereignisse $A$ und $B$ heissen *disjunkt*, wenn sich $A$ und $B$ gegenseitig ausschliessen und nicht gemeinsam eintreten können. Dann gilt $$A \cap B = \{\}$$ Dieses Ereignis ist somit unmöglich.
 
 ## Axiome und Rechenregeln der Wahscheinlichkeitsrechnung
 
@@ -46,7 +46,7 @@ Für dieses Modul relevante Rechenregeln:
 1. $P(\overline{A} = 1 - P(A)$
 2. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
-Die zweite Regel für diskjunkte Ereignisse. Die Schnittemenge wird doppelt gezählt, weshalb wir diese einmal abziehen müssen.
+Die zweite Regel für nicht diskjunkte Ereignisse. Die Schnittmenge wird doppelt gezählt, weshalb wir diese einmal abziehen müssen.
 
 ![Wahrscheinlichkeit für nicht disjunkte Ereignisse](venn_r2.png){width=30%}
 
@@ -56,13 +56,13 @@ Mit diskret sind endliche und unendliche Mengen gemeint, welche ganzzahlige Elem
 
 ## Laplace Wahrscheinlichkeit
 
-Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen zählen wir die Anzahl der *günstigen* Elemtentarereignisse durch die Anzahl der *möglichen* Elementarereignisse.
+Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen zählen wir die Anzahl der *günstigen* Elemtentarereignisse, durch die Anzahl der *möglichen* Elementarereignisse.
 Wenn alle Ereignisse $E$ gleich wahrscheinlich sind, ist das Eintreten des Ereignisses $E$ nach dem Laplace-Modell:
 $$P(E) = \frac{\lvert E \rvert}{\lvert \Omega \rvert}$$
 
 ## Der Begriff der Unabhängigkeit
 
-Hat der Ausgang von Ereignis $A$ keinen Einfluss auf den Ausgang des Ereignisses $B$, sind die Ereignisse Ereignisse $A$ und $B$ stochastisch unabhängig. Dann gilt
+Hat der Ausgang von Ereignis $A$ keinen Einfluss auf den Ausgang des Ereignisses $B$, sind die Ereignisse $A$ und $B$ stochastisch unabhängig. Dann gilt
 $$ P(A \cap B) = P(A) * P(B)$$
 
 Als Beispiel: $A$ sei mit einem fairen Würfel eine eis oder zwei zu würfeln und Ereignis $B$ sei Kopf beim Werfen einer fairen Münze. Weil die beiden Ereignisse keinen Einfluss aufeinander haben gilt obige Formel.

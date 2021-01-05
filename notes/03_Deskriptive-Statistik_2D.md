@@ -5,13 +5,13 @@ Bei zweidimensionalen Daten werden an *einem* Versuchobjekt jeweils *zwei* versc
 ## Streudiagramme
 Zweidimensionale Daten werden häufig mit *Streudiagrammen* (Scatterplot) dargestellt. Dabei werden die beiden Messungen einer Versuchseinheit als *Koordinaten* in einem Korrdinatensystem interpretiert und dargestellt. Sind die Daten in dieser Form gegeben, interessieren wir uns in erster Linie für die *Zusammenhänge* und *Abhängigkeiten* zwischen den beiden Variablen.
 
-![Streudiagramm für die Mortalität und Weinkonsum in 18 Länder](bsp-streudiagramm.png){width=70%}
+![Streudiagramm für die Mortalität und Weinkonsum](bsp-streudiagramm.png){width=70%}
 
 Dabei ist ein Punkt als ($x_1,y_1)$ mit den Grössen $x=Weinkonsum$ und $y=Mortalitaet$ zu interpretieren.
 
 * Einfluss auf andere Körperorgane wird hier nicht berücksichtigt
 * *Kausaler* Zusammenhang muss nicht zwingend zwischen den beiden Grössen vorhanden sein
-* Die Zuweisung Grösse und X/Y-Achse könnte auch vertauscht werden. Die Entscheidung hängt von der Problemstellung ab
+* Die Zuweisung der Grösse und X/Y-Achse könnte auch vertauscht werden. Die Entscheidung hängt von der Problemstellung ab
 * Die Punkte im Streudiagramm werden auch als *Punktwolke* bezeichnet
 
 ### Streudiagramm in `R`
@@ -29,7 +29,7 @@ plot(wein,
 ```
 
 ## Abhängigkeit und Kausalität
-Bei Streudiagrammen müssen wir aufpassen, dass *Abhängigkeit* und *Kausalität* nicht miteinander verwechselt werden. Nur weil eine Gesetzmässigkeit vorhanden ist, heisst das nicht, dass diese Gesetzmässigkeit auch kausal erkärt werden kann. Man muss sich *bewusst* sein, auf *welchen Daten* das Streudiagramm basiert. Man soll sich *nie* blindlings auf Grafiken verlassen. Die Daten müssen auf anderen Weg auf einen kausalen Zusammenhang untersucht werden.
+Bei Streudiagrammen müssen wir aufpassen, dass *Abhängigkeit* und *Kausalität* nicht miteinander verwechselt werden. Nur weil eine Gesetzmässigkeit vorhanden ist, heisst das nicht, dass diese Gesetzmässigkeit auch kausal erklärt werden kann. Man muss sich *bewusst* sein, auf *welchen Daten* das Streudiagramm basiert. Man soll sich *nie* blindlings auf Grafiken verlassen. Die Daten müssen auf anderen Weg auf einen kausalen Zusammenhang untersucht werden.
 
 ## Einfache lineare Regression
 Weil wir wissen möchten, *wie* sich Daten verhalten, versuchen wir einem Muster ein Form zu geben. Dies kann eine Gerade sein. Die Beschreibung dieser Form geschieht in der Sprache der Mathematik. Dabei wird auch von einer *Modellierung* der Daten gesprochen.
@@ -41,7 +41,7 @@ Wie finden wir nun die Gerade die *möglichst gut* zu allen Punkten passt? Dazu 
 
 $$r_i=y_i-(a+bx_i)=y_i-a-bx_i$$
 
-Bei der Methode der kleinsten Quadrate werden die Summen der *Quadrate der Abweichungen* aufsummiert $r_1^2+r_2^2+...+r_n^2=\sum_{i}r_i^2$. Die Parameter $a$ und $b$ werden so gewählt, dass die Summe minimal wird. Eine Gerade pass also dann am besten zu den Punkten im Streudiagramm, wenn die Summe der Quadrate der vertikalen Abweichungen minimal ist (Optimierungsproblem).
+Bei der Methode der kleinsten Quadrate werden die Summen der *Quadrate der Abweichungen* aufsummiert $r_1^2+r_2^2+...+r_n^2=\sum_{i}r_i^2$. Die Parameter $a$ und $b$ werden so gewählt, dass die Summe minimal wird. Eine Gerade passt also dann am besten zu den Punkten im Streudiagramm, wenn die Summe der Quadrate der vertikalen Abweichungen minimal ist (Optimierungsproblem).
 
 ![Residuen für Buchpreis in Abhängigkeit der Seitenanzahl](residuum.png){width=60%}
 
@@ -64,7 +64,7 @@ lm(preis ~ seite)
 # lm(formula = preis ~ seite)
 #
 # Coefficients:
-# (Intercept)        seite  
+# (Intercept)        seite
 #     6.04000      0.04673
 # y = 6.04 + 0.047x
 ```
@@ -74,22 +74,22 @@ lm(preis ~ seite)
 * Die Variabeln sind verglichen mit dem `plot(x,y)` vertauscht
 * Die Gerade wird *Regressionsgerade* genannt
 
-![Streudiagramm mit Regressionsgeraden aus obigem `R` Code](streudiagramm-regression.png){width=70%}
+![Streudiagramm mit Regressionsgeraden aus obigem `R` Code](streudiagramm-regression.png){width=60%}
 
 #### Extrapolationen
-Extrapolationen sind Vorhersagen der $y$-Werte des Modelles, die *ausserhalb* des Bereiches ($x$) liegen, womit das Modell erstellt wurde. Für Extrapolationen, die weit ausserhalb des gültigen Bereichs liegen, können die Vorhersagen problematisch wenn nicht sogar sinnlos werden.
+Extrapolationen sind Vorhersagen der $y$-Werte des Modelles, die *ausserhalb* des Bereiches ($x$) liegen, womit das Modell erstellt wurde. Für Extrapolationen, die weit ausserhalb des gültigen Bereichs liegen, können die Vorhersagen problematisch, wenn nicht sogar sinnlos werden.
 
 #### Interpolationen
-Interpolationen sind Vorhersagen der $y$-Werte des Modelles, die *innerhalb* des Bereiches liegt, womit das Modell erstellt wurde. Die Interpolationen sind unproblematischer, aber auch nur *begrenzt* gültig.
+Interpolationen sind Vorhersagen der $y$-Werte des Modells, die *innerhalb* des Bereichs liegt, womit das Modell erstellt wurde. Die Interpolationen sind unproblematischer, aber auch nur *begrenzt* gültig.
 
 ### Empirische Korrelation
-Die *empirische Korrelation* ($r$ als Kennzahl oder auch $\hat{p}$ ist die quantitative Zusammenfassung der *linearen* Abhängigkeit von zwei Grössen. Es ist eine dimensionslose Zahle zwischen $-1$ und $1$ und misst die Stärke und die Richtung der *linearen Abhängigkeit* zwischen den Daten $x$ und $y$. *Wichtig:* Der Korrelationskoeffizient misst (erkennt) nur den linearen Zusammenhang!
+Die *empirische Korrelation* ($r$ als Kennzahl oder auch $\hat{p}$) ist die quantitative Zusammenfassung der *linearen* Abhängigkeit von zwei Grössen. Es ist eine dimensionslose Zahl zwischen $-1$ und $1$ und misst die Stärke und die Richtung der *linearen Abhängigkeit* zwischen den Daten $x$ und $y$. *Wichtig:* Der Korrelationskoeffizient misst (erkennt) nur den linearen Zusammenhang!
 
 * Ist $r=+1$, dann liegen Punkte auf einer steigenden Geraden ($y=a+bx$ mit $b>0$)
 * Ist $r=-1$, dann liegen die Punkte auf einer fallenden Geraden ($y=a+bx$ mit $b<0$)
 * Sind $x$ und $y$ unabhängig (es besteht kein Zusammenhang), so ist $r=0$. Die Umkehrung gilt Allgemein aber nicht!
 
-#### Empirische Korreltation in `R`
+#### Empirische Korrelation in `R`
 
 ```{.r .numberLines}
 cor(seite, preis)

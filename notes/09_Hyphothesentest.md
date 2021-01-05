@@ -1,23 +1,23 @@
 # Hypothesentest für Messdaten
 
-Mittels eines Hypothesentests wird eine Angabe (z.B Inhaltsmenge einer Pet-Flasche) überprüft ob diese wahr ist. Solche Tests sind stadardisiert und ist eine reproduzierbares Verfahren. Diese geben auch ein klares Kriterium an, wann ein Druchschnitt zu weit von einer Angabe entfernt ist.
-Der Hypothesentest ist *nie* ein Beweis das eine Angabe wahr ist oder falsch, sonder lediglich ob die Angabe mit einer gewissen Wahrscheinlichkeit stimmt oder nicht.
+Mittels eines Hypothesentests wird eine Angabe (z. B. Inhaltsmenge einer Pet-Flasche) überprüft, ob diese wahr ist. Solche Tests sind standardisiert und ist ein reproduzierbares Verfahren. Diese geben auch ein klares Kriterium an, wann ein Durchschnitt zu weit von einer Angabe entfernt ist.
+Der Hypothesentest ist *nie* ein Beweis, dass eine Angabe wahr ist oder falsch, sondern lediglich ob die Angabe mit einer gewissen Wahrscheinlichkeit stimmt oder nicht.
 
 ## Statistische Tests und Vertrauensintervall für eine Stichprobe bei normalverteilten Daten
 
-Messungen können wir als Realisierungen von unabhängigen, identisch verteilten Zufallsvariablen $X_i$ betrachten und die Kennzahlen $E(X_i)=\mu$ und $Var(X_i) = \sigma^2_X$ erfassen. Typischerweise sind diese (und andere) Kennzahlen *unbekannt*.Trotzdem möchten wir eine Aussage über das wahre, aber eben unbekannte $\mu$ und $\sigma^2$ machen.
-Das Ziel ist es den Daten $\mu$ und $\sigma^2$ anzunähern und sprechen dabei von einer *Schätzung* der Parameter $\mu$ und $\sigma^2$. Geschätzte Werte werden mit einem $\hat{}$ bezeichnet $\hat{\mu}$.
+Messungen können wir als Realisierungen von unabhängigen, identisch verteilten Zufallsvariablen $X_i$ betrachten und die Kennzahlen $E(X_i)=\mu$ und $Var(X_i) = \sigma^2_X$ erfassen. Typischerweise sind diese (und andere) Kennzahlen *unbekannt*. Trotzdem möchten wir eine Aussage über das wahre, aber eben unbekannte $\mu$ und $\sigma^2$ machen.
+Das Ziel ist es die Daten $\mu$ und $\sigma^2$ anzunähern und sprechen dabei von einer *Schätzung* der Parameter $\mu$ und $\sigma^2$. Geschätzte Werte werden mit einem $\hat{}$ bezeichnet, zum Beispiel $\hat{\mu}$.
 Für die (Punkt-)Schätzungen für den Erwartungswert und Varianz gilt:
 $$\hat{\mu}=\bar{X_n}=\frac{X_1+...+X_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i$$
 $$\hat{\sigma}^2_X=\frac{(X_1-\bar{X_n})^2+...+(X_1-\bar{X_n})^2}{n-1}=\frac{1}{n-1}\sum_{i=1}^n (X_i-\bar{X_n})^2$$
 
 Beachte, dass $\hat{\mu}$ und $\hat{\sigma}^2_X$ selbst Zufallsvariablen sind und für jede neue Messung sich neue $\hat{\mu}$ und $\hat{\sigma}^2_{X}$ ergeben.
-Obwohl im Allgmeinen $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ ist die Hoffnung dass $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ und damit annähert.
+Obwohl im Allgmeinen $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ ist die Hoffnung, dass $\hat{\mu}\ne \mu$ und $\hat{\sigma}^2_X \approx \sigma_{X}^2$ und damit annähert.
 
 ### Ziel des Hypothesentests
 
-Das Ziel des Hypothesentests ist das feststellen ob der waare Mittelwert wahr
-ist. Entstehen bei den Schätzungen grössere Standardabweichungen muss die Angabe
+Das Ziel des Hypothesentests ist das feststellen, ob der wahre Mittelwert wahr
+ist. Entstehen bei den Schätzungen grössere Standardabweichungen, muss die Angabe
 hinterfragt werden.
 
 ## Hypothesentest
@@ -27,15 +27,15 @@ eine Messreihe zu einer gewissen Grösse passt. Wir gehen davon aus, dass wir de
 wahren Mittelwert *nicht* kennen, gehen aber von einem *Idealwert* oder einem
 vermuteten Wert aus.
 
-Unter der Annahme, dass die Daten normalverteilt sind, wird überprüft ob eine
-Messreihe, unter der Annahme von $\mu=a$ (der Mittelwert) warhscheinlich ist
+Unter der Annahme, dass die Daten normalverteilt sind, wird überprüft, ob eine
+Messreihe, unter der Annahme von $\mu=a$ (der Mittelwert), wahrscheinlich ist
 oder nicht.
 
 ### Modell
-Eine Anuahl Messwertel sind die Realisierung der Zufallsvariablen $X_1,
+Eine Anzahl Messwerte sind die Realisierung der Zufallsvariablen $X_1,
 X_2,...,X_n$, wobei $X_i$ eine kontinuierliche Messgrösse ist. Dabei soll
 gelten:
-$$X_1,...X_n {i.i.d.}\sim \mathcal{N}(\mu,\sigma_x^2)$$
+$$X_1,...X_n \quad \text{i.i.d.}\sim \mathcal{N}(\mu,\sigma_x^2)$$
 
 ### Nullhypothese
 $$H_0: \mu = \mu_{0}=a$$
@@ -50,13 +50,13 @@ $$H_A < oder >$$
 Wenn die Annahme nicht gleich $\mu$ ist
 
 ### Teststatistik
-Es wird getestet, ob diese Verteilung mit der Annahme $\mu=a$ gerechtfertigt
+Es wird getestet, ob die Verteilung mit der Annahme $\mu=a$ gerechtfertigt
 ist. Oder Mathematisch: Die Verteilung der Teststatistik T unter Nullhypothese
 $H_0$
-$$T=\bar{H_n}/mathcal{N}(\mu,\frac{\sigma^2}{n})$$
+$$T=\bar{H_n}\mathcal{N}(\mu,\frac{\sigma^2}{n})$$
 
 Ist die Wahrscheinlichkeit kleiner als 2.5% ist sie zu klein und der
-Mittelwert zu unwahrscheinlich, als dieser zur Aussgangsgrösse a passen könnte.
+Mittelwert zu unwahrscheinlich, als dieser zur Aussgangsgrösse $a$ passen könnte.
 
 ![Normalverteilungskurve eines
 Hypothesentests](normkurve-hypotest.png){width=70%}
@@ -75,25 +75,25 @@ angegeben:
 $$K=(-\infty,a-\alpha] \, \cup [ \, a+\alpha, \infty)$$
 
 ### p-Wert
-Der P-Wert ist die Wahrscheinlichkeit, unter der Nullhypothese ein mindestens so extremes Ereignis (in Richtung der Alternative) zu beobachten wie das aktuell beobachtete.
-Damit wird angedeutet, wie extrem das Ergebnis ist. Je kleiner der p-Wert desto
+Der P-Wert ist die Wahrscheinlichkeit, unter der Nullhypothese ein mindestens so extremes Ereignis (in Richtung der Alternative) zu beobachten, wie das aktuell beobachtete.
+Damit wird angedeutet, wie extrem das Ergebnis ist. Je kleiner der p-Wert, desto
 mehr spricht das Ergebnis gegen die Nullhypothese.
 
 * 0: passt gar nicht
 * 1: passt sehr gut
 
-![Wahrscheinlichkeit unter Gültigkeit der Nullhypothese das erhaltene Ergebnis
+![Wahrscheinlichkeit, unter Gültigkeit der Nullhypothese, das erhaltene Ergebnis
 oder ein extremeres zu erhalten](p-value.png)
 
-### p-Wert und Statistischer Test
+### $p$-Wert und Statistischer Test
 Bei einem vorgegebenen Signifikanzniveaus $\alpha$ gilt aufgrund der Definition
-des p-Werts für einen einseitigen Test:
+des $p$-Werts für einen einseitigen Test:
 
 * Verwerfe $H_0$ falls p-Wert $\leq \alpha$
 * Belasse $H_0$ falls p-Wert $> \alpha$
 
-Computerprogramme liefern den Testentscheid nur mit p-Wert und *immer* auf
-Signifikanzniveau an.
+Computerprogramme liefern den Testentscheid nur mit $p$-Wert und *immer* auf
+Signifikanzniveau.
 
 #### Signifikanz
 
@@ -102,18 +102,18 @@ Signifikanzniveau an.
 * p-Wert $\approx 0.001 \implies$ stark signifikant, "\*\*"
 * p-Wert $\leq 10^{-4} \implies$ äusserst signifikant, "\*\*\*"
 
-## t-Test
-Entgegen dem bisherigen Verfahren (z-Test) wo die Standardabweichung bekannt
-ist, setzt der t-Test keine Standardabweichung voraus. Dies ist auch praktisch
-kaum der Falls das SD vorliegt.
+## $t$-Test
+Entgegen dem bisherigen Verfahren ($z$-Test) wo die Standardabweichung bekannt
+ist, setzt der $t$-Test keine Standardabweichung voraus. Dies ist auch praktisch
+kaum der Falls, dass die SD vorliegt.
 
-### t-Verteiltung
-Die Verteilung der Teststatistik beim t-Test unter der Nullhypothese
+### $t$-Verteiltung
+Die Verteilung der Teststatistik beim $t$-Test unter der Nullhypothese
 $$H_0: \mu = \mu_0$$
 ist gegeben durch
 $$T=\bar{X_n}\sim T_{n-1}(\mu, \frac{\hat{\sigma_{X}}}{\sqrt{n}})$$
 wobei $t_{n-1}$ eine Verteilung mit $n-1$ Freiheitsgraden ist.
 
-Die Normalverteilung wird also durch t-Verteilung ersetzt. Gleicht aber
-Normalverteilung, ist aber flacher, wegen der grösseren Unsicherheit. Dies hängt
+Die Normalverteilung wird also durch eine $t$-Verteilung ersetzt. Gleicht aber
+der Normalverteilung. Ist aber flacher, wegen der grösseren Unsicherheit. Dies hängt
 von der Anzahl Beobachtungen ab.

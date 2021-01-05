@@ -4,7 +4,7 @@ Bei einem Zufallsexperiment mit dem Grundraum $\Omega$ ordnen wir mit der *Funkt
 
 Eine Wertemenge bezeichnet die Werte, welche die Zufallsvariable annehmen kann.
 
-**Bermerkungen**
+**Bemerkungen**
 
 * die *Zufallsvariable* wird mit einem Grossbuchstaben bezeichnet ($X$)
 * der entsprechende *Kleinbuchstabe* $x$ stellt einen konkreten Wert dar, den die Zufallsvariable annehmen kann (die Zahl)
@@ -24,7 +24,7 @@ $$\sum_{i=1}^{n} P(X=x_n)=1$$
 
 ## Kennzahlen einer Verteilung
 
-Eine beliebige *diskrete* Verteilung kann durch zwei Kennzahlen, den *Erwartungswert* $E(X)$ und die *Standardabweichung* $\sigma(X)$. Der Erwartungswert beschreibt die mittlere Lage der Verteilung:
+Eine beliebige *diskrete* Verteilung kann durch zwei Kennzahlen, den *Erwartungswert* $E(X)$ und die *Standardabweichung* $\sigma(X)$ zusammengefasst werden. Der Erwartungswert beschreibt die mittlere Lage der Verteilung:
 
 $$E(X)=x_1*P(X=x_1)+x_2*P(X=x_2)+...+x_n*P(X=x_n)=\sum_{i=1}^{n} x_i*P(X=x_i)$$
 
@@ -65,8 +65,8 @@ Der Erwartungswert ist 2.8333 und die Standardabweichung ist 1.675 (die Werte we
 
 ### Unterschied Mittelwert und Erwartungswert
 
-Der arthmetische Mittelwert $\overline{x}$ wird aus *konkreten* Daten gewonnen. Wir haben also Messwerte $x_1,...,x_n$ und können $\overline{x}$ berechnen. Der Erwartungswert $\sigma_{X}$ ist ein *theoretischer* Wert, der sich aus dem Modell der Wahrscheinlichkeitsverteilung ergibt.
+Der arithmetische Mittelwert $\overline{x}$ wird aus *konkreten* Daten gewonnen. Wir haben also Messwerte $x_1,...,x_n$ und können $\overline{x}$ berechnen. Der Erwartungswert $\sigma_{X}$ ist ein *theoretischer* Wert, der sich aus dem Modell der Wahrscheinlichkeitsverteilung ergibt.
 
 Die Hoffnung ist, dass sich das arithmetische Mittel für immer mehr Versuche an den theoretischen Wert annähert, sofern sich die konkreten Daten der Wahrscheinlichkeitsverteilung von $X$ folgen.
 
-Derselbe Unterschied wie für Mittelwert und Erwartungswert gilt auch für die *empirische Standardabweichung* $s_X$ und die *Standardabweichung* $\sigma_X$
+Derselbe Unterschied, wie für Mittelwert und Erwartungswert, gilt auch für die *empirische Standardabweichung* $s_X$ und die *Standardabweichung* $\sigma_X$
