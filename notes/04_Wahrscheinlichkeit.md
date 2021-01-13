@@ -43,7 +43,7 @@ Die Wahrscheinlichkeitsrechnung baut auf die folgenden drei Grundregeln (Kolmogo
 
 Für dieses Modul relevante Rechenregeln:
 
-1. $P(\overline{A} = 1 - P(A)$
+1. $P(\overline{A}) = 1 - P(A)$
 2. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 Die zweite Regel für nicht diskjunkte Ereignisse. Die Schnittmenge wird doppelt gezählt, weshalb wir diese einmal abziehen müssen.
@@ -56,7 +56,7 @@ Mit diskret sind endliche und unendliche Mengen gemeint, welche ganzzahlige Elem
 
 ## Laplace Wahrscheinlichkeit
 
-Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen zählen wir die Anzahl der *günstigen* Elemtentarereignisse, durch die Anzahl der *möglichen* Elementarereignisse.
+Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen, zählen wir die Anzahl der *günstigen* Elemtentarereignisse, durch die Anzahl der *möglichen* Elementarereignisse.
 Wenn alle Ereignisse $E$ gleich wahrscheinlich sind, ist das Eintreten des Ereignisses $E$ nach dem Laplace-Modell:
 $$P(E) = \frac{\lvert E \rvert}{\lvert \Omega \rvert}$$
 

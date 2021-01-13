@@ -211,6 +211,7 @@ Ein Boxplot ist in Abbildung \ref{boxplot} schematisch dargestellt. Er besteht a
 
 * einem Rechteck dessen Höhe vom empirischen 25%- und 75%-Quantil begrenzt wird (grüne Fläche)
 * horizontalem Strich in der Box für den Median (schwarz)
+* oberhalb des Medians sind 25% der Daten bis zum oberen Quantil, 25% der Messungen von Median zum unteren Quantil
 * *whiskers*, blaue Linien, die zur kleinsten und grössten «normalen» Beobachtung führen (normal heisst *höchstens* 1.5 mal die Quartilsdifferenz von oberen und unteren Quartil)
 * kleine roten Kreise, für die Ausreisser, welche ausserhalb der normalen Beobachtungen liegen
 

@@ -46,7 +46,7 @@ Im stetigen Fall, sind die beiden Funktionen aber mit Integralen statt mit Summe
 
 ## Normalverteilung (Gaussverteilung)
 
-Die *Normalverteilung* ist die häufigste Verteilung für Messwerte und spielt vor allem für Durchschnitte von Messwerten eine wichtige Rolle. Wichtigte Wahrscheinlichkeitsverteilung in der Statistik.
+Die *Normalverteilung* ist die häufigste Verteilung für Messwerte und spielt vor allem für Durchschnitte von Messwerten eine wichtige Rolle. Ist die wichtigste Wahrscheinlichkeitsverteilung in der Statistik.
 
 **Normalverteilung**
 $$f(x) = \frac{1}{\sigma \sqrt{2 \pi}}exp(-\frac{(x - \mu)^2}{2\sigma^2})$$
