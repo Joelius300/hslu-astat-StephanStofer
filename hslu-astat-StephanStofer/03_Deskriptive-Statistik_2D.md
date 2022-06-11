@@ -39,7 +39,9 @@ Liegt ein Modell vor, können wir *Vorhersagen* machen. Dieses Modell erlaubt un
 ### Methode der kleinsten Quadrate
 Wie finden wir nun die Gerade die *möglichst gut* zu allen Punkten passt? Dazu verwenden wir den Begriff **Residuum**. Ein *Residuum* $r_i$ ist die vertikale Differenz zwischen einem Datenpunkt ($x_i,y_i)$ und dem Punkt ($x_i,a+bx_i$) auf der gesuchten Geraden:
 
-$$r_i=y_i-(a+bx_i)=y_i-a-bx_i$$
+$$
+r_i=y_i-(a+bx_i)=y_i-a-bx_i
+$$
 
 Bei der Methode der kleinsten Quadrate werden die Summen der *Quadrate der Abweichungen* aufsummiert $r_1^2+r_2^2+...+r_n^2=\sum_{i}r_i^2$. Die Parameter $a$ und $b$ werden so gewählt, dass die Summe minimal wird. Eine Gerade passt also dann am besten zu den Punkten im Streudiagramm, wenn die Summe der Quadrate der vertikalen Abweichungen minimal ist (Optimierungsproblem).
 
