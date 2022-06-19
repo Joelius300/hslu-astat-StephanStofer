@@ -46,14 +46,19 @@ annähert.
 
 ### Alternativhypothese
 $$H_A: \mu \neq \mu_{0}=a$$ oder
-$$H_A < oder >$$
+$$
+H_A < oder >
+$$
 Wenn die Annahme nicht gleich $\mu$ ist
 
 ### Teststatistik
 Es wird getestet, ob die Verteilung mit der Annahme $\mu=a$ gerechtfertigt
 ist. Oder Mathematisch: Die Verteilung der Teststatistik T unter Nullhypothese
 $H_0$
-$$T=\bar{H_n}\mathcal{N}(\mu,\frac{\sigma^2}{n})$$
+
+$$
+T=\bar{H_n} \sim \mathcal{N}(\mu, \frac{\sigma^2}{n})
+$$
 
 Ist die Wahrscheinlichkeit kleiner als 2.5% ist sie zu klein und der
 Mittelwert zu unwahrscheinlich, als dieser zur Aussgangsgrösse $a$ passen könnte.
@@ -72,7 +77,9 @@ Entscheidung zu treffen. Normalerweise 0.05 bzw. 0.01.
 Liegt der gemessene Mittelwert im roten Bereich (der Abbildung), so zweifelt man
 an der Nullhypothese und *verwerfen* diese. Diese werden im einem Intervall
 angegeben:
-$$K=(-\infty,a-\alpha] \, \cup [ \, a+\alpha, \infty)$$
+$$
+K=(-\infty,a-\alpha] \, \cup [ \, a+\alpha, \infty)
+$$
 
 ### p-Wert
 Der P-Wert ist die Wahrscheinlichkeit, unter der Nullhypothese ein mindestens so extremes Ereignis (in Richtung der Alternative) zu beobachten, wie das aktuell beobachtete.
@@ -109,9 +116,15 @@ kaum der Falls, dass die SD vorliegt.
 
 ### $t$-Verteiltung
 Die Verteilung der Teststatistik beim $t$-Test unter der Nullhypothese
-$$H_0: \mu = \mu_0$$
+$$
+H_0: \mu = \mu_0
+$$
+
 ist gegeben durch
-$$T=\bar{X_n}\sim T_{n-1}(\mu, \frac{\hat{\sigma_{X}}}{\sqrt{n}})$$
+$$
+T=\bar{X_n}\sim T_{n-1}(\mu, \frac{\hat{\sigma_{X}}}{\sqrt{n}})
+$$
+
 wobei $t_{n-1}$ eine Verteilung mit $n-1$ Freiheitsgraden ist.
 
 Die Normalverteilung wird also durch eine $t$-Verteilung ersetzt. Gleicht aber

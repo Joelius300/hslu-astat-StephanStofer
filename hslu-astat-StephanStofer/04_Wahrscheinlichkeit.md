@@ -18,7 +18,10 @@ Das Wahrscheinlichkeitsmodell besteht aus folgenden Komponenten:
 #### Grundraum, Elementarereignisse
 
 Bei einem Experiment wird aus dem Grundraum *ein* Elementarereignis *zufällig* gewählt. Als Beispiel das Würfeln. Grundraum gegeben durch
-$$\Omega = \{1,2,3,4,5,6\}$$
+$$
+\Omega = \{1,2,3,4,5,6\}
+$$
+
 Element $\omega$ ist ein Elementarereignis und bedeutet, dass bei Würfeln die Zahl 2 geworfen wird.
 
 #### Ereignis
@@ -55,15 +58,17 @@ Die zweite Regel für nicht diskjunkte Ereignisse. Die Schnittmenge wird doppelt
 Mit diskret sind endliche und unendliche Mengen gemeint, welche ganzzahlige Elemente in $\Omega$ enthalten.
 
 ## Laplace Wahrscheinlichkeit
-
 Beim *Modell von Laplace* wird für jedes Elementarereignis die gleiche Wahrscheinlichkeit angenommen. Um diese Wahrscheinlichkeit zu berechnen, zählen wir die Anzahl der *günstigen* Elemtentarereignisse, durch die Anzahl der *möglichen* Elementarereignisse.
 Wenn alle Ereignisse $E$ gleich wahrscheinlich sind, ist das Eintreten des Ereignisses $E$ nach dem Laplace-Modell:
-$$P(E) = \frac{\lvert E \rvert}{\lvert \Omega \rvert}$$
+$$
+P(E) = \frac{\lvert E \rvert}{\lvert \Omega \rvert}
+$$
 
 ## Der Begriff der Unabhängigkeit
-
 Hat der Ausgang von Ereignis $A$ keinen Einfluss auf den Ausgang des Ereignisses $B$, sind die Ereignisse $A$ und $B$ stochastisch unabhängig. Dann gilt
-$$ P(A \cap B) = P(A) * P(B)$$
+$$
+P(A \cap B) = P(A) * P(B)
+$$
 
 Als Beispiel: $A$ sei mit einem fairen Würfel eine eis oder zwei zu würfeln und Ereignis $B$ sei Kopf beim Werfen einer fairen Münze. Weil die beiden Ereignisse keinen Einfluss aufeinander haben gilt obige Formel.
 
